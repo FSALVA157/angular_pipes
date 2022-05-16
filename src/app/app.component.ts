@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  idioma: string = 'es';
+  urlVideo: string = "https://www.youtube.com/embed/cCzkcVufnYM";
+
   nombre: string = "FeRnAnDo";
+  nombre2: string = "fernando javier salva";
 
   arreglo = [1,2,3,4,5,6,7,8,9,10];
 

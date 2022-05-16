@@ -99,6 +99,21 @@
               <td>date:'MMMM - dd'</td>
               <td>{{fecha | date:'dd - MMMM - YYYY'}}</td>
              </tr>
+             <tr>
+              <td>{{fecha}}</td>
+              <td>date:'dd - MMMM - YYYY':'':idioma
+                  <br>
+                  <button (click)="idioma='es'" class="mr-1 btn btn-warning">Español</button>
+                  <button (click)="idioma='en'" class="mr-1 btn btn-primary">Ingles</button>
+                  <button (click)="idioma='fr'" class="mr-1 btn btn-info">Frances</button>
+              </td>
+              <td>{{fecha | date:'dd - MMMM - YYYY':'':idioma}}</td>
+             </tr>
+             <tr>
+              <td>{{nombre2}}</td>
+              <td>capitalizado</td>
+              <td>{{nombre2 | capitalizado:false}}</td>
+             </tr>
                          
            </tbody>
 
@@ -120,6 +135,18 @@
       </div>
 
 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <iframe 
+        width="560"
+        height="315"
+        [src]="urlVideo | secureDOM" 
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </div>
 
